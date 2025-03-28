@@ -1,11 +1,10 @@
+import Weather from "./components/Weather";
 import "./index.css";
 
-function App() {
+export default function App() {
   return (
-    <>
-      <h1 className="text-zinc-500">Weather Dashboard</h1>
-    </>
+    <div className="min-h-screen grid bg-custom-blue">
+      <Weather />
+    </div>
   );
 }
-
-export default App;
