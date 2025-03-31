@@ -2,14 +2,16 @@
 
 ## Overview
 
-This Weather Dashboard is a React-based application that allows users to search for a city's weather forecast. It fetches real-time weather data from the OpenWeather API and displays it in an intuitive UI. The current implementation includes a functional search bar, city name display, and essential styling.
+The Weather Dashboard is a React-based application that allows users to search for a city's weather forecast. It fetches real-time weather data from the OpenWeather API and displays it in an intuitive, responsive UI. The application provides a functional search bar, current weather details, hourly and daily forecasts, and a clean, modern design, with full responsiveness across devices.
 
 ## Features
 
 - **Search Bar**: Users can search for a city's weather.
-- **City Name Display**: The searched city name is shown on the screen.
-- **Input Clearing**: After searching, the input field is automatically cleared.
-- **Styled UI**: The application has a clean, user-friendly design.
+- **City Name Display**: Displays the searched city name on the screen.
+- **Current Weather**: Shows the current weather conditions for the searched city.
+- **Hourly and Daily Forecasts**: Displays the weather forecast for the next few hours and days.
+- **Input Clearing**: The input field automatically clears after searching.
+- **Styled UI**: Features a modern, user-friendly design that adapts to different screen sizes. -**Footer**
 
 ## Components
 
@@ -33,11 +35,15 @@ The project is structured into the following React components:
 
 ### 4. `Weather_Hourly.jsx`
 
-- (To be implemented) Displays an hourly forecast.
+- Displays the hourly forecast, showing temperature, weather conditions, and time of the forecasted data.
 
 ### 5. `Weather_Daily.jsx`
 
-- (To be implemented) Displays a daily forecast.
+- Displays the daily weather forecast with temperature highs/lows and conditions for the next 7 days.
+
+### 6. `Footer.jsx`
+
+- Displays footer information.
 
 ## Installation & Setup
 
@@ -67,6 +73,7 @@ The project is structured into the following React components:
 1. Enter a city name in the search bar.
 2. Click the search icon to fetch weather data.
 3. The city name appears on the screen, and the input clears.
+4. The application displays the current weather, hourly forecast, and daily forecast for the selected city.
 
 ## Future Improvements
 
@@ -80,4 +87,4 @@ This project is open-source under the MIT License.
 
 ---
 
-Developed with ❤️ using React.
+Developed using React.

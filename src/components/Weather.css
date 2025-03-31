@@ -1,0 +1,75 @@
+/* Weather.css */
+
+/* Ensure all components are centered */
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px; /* Adjust gap for better spacing */
+  margin-top: 20px;
+}
+
+/* Forecast section (Hourly + Daily) */
+.forecast-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px; /* Increase gap for better spacing */
+}
+
+/* Footer Styles */
+.footer {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  bottom: 0;
+  background-color: #4499e4;
+  color: white;
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+/* Desktop (≥1300px) - All components in one row */
+@media (min-width: 1300px) {
+  .weather-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .forecast-container {
+    flex-direction: row;
+  }
+}
+
+/* Medium Screens (768px - 1299px) - CurrentStatus on top, others below */
+@media (max-width: 1299px) {
+  .weather-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .forecast-container {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+/* Mobile (≤768px) - Stack everything */
+@media (max-width: 826px) {
+  .forecast-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .searchBar {
+    width: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  .searchBar {
+    width: 300px;
+  }
+  .weatherCard {
+    width: 300px;
+  }
+}
